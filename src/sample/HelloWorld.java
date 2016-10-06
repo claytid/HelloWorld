@@ -15,6 +15,10 @@ public class HelloWorld {
     	return a+b;
     }
 
+    public int add2(int a, int b) {
+    	return a+b;
+    }
+    
     public int subtract(int a, int b) {
     	return a-b;
     }
