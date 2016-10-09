@@ -24,7 +24,7 @@ public class HelloWorld {
     }
 
     public int multiply(int a, int b) {
-        return a*b;
+        return a,a*b;
     }
 
 }
