@@ -8,7 +8,7 @@ public class HelloWorld {
     }
     
     public int divide(int a, int b) {
-        return a \ b;   
+        return a / b;   
     }
 
     public int add(int a, int b) {
