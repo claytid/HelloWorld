@@ -29,7 +29,7 @@
 
 <target name="test" depends="compile-test">
     <mkdir dir="${report.dir}"/>
-    <junit printsummary="on" haltonfailure="yes">
+    <junit printsummary="on" haltonfailure="no">
         <classpath>
           <path refid="classpath.test" />
           <pathelement location="${test.build.dir}"/>
