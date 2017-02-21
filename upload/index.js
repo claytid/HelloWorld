@@ -4,7 +4,9 @@ var _ = require('lodash');
 console.log("Hello World")
 
 var parser = require('junit-xml-parser').parser;
-var filename = "/Users/Shared/Jenkins/Home/workspace/HelloWorld/build/junit/TEST-sample.HelloWorldTest.xml";
+var workspace = process.argv[2];
+console.log("workspace",workspace);
+var filename = workspace + "/build/junit/TEST-sample.HelloWorldTest.xml";
 
 fs.readFile(filename, 'utf8', function (err,data) {
 	if (err) {

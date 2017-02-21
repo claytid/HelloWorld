@@ -2,4 +2,4 @@
 cd upload
 echo $WORKSPACE
 npm install
-node index.js 
+node index.js $WORKSPACE
