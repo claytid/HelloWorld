@@ -1,6 +1,7 @@
 #!/bin/bash
 ls
 cd upload
-echo $WORKSPACE
+echo $APIKEYFILE
+cat $APIKEYFILE
 npm install
 node index.js $WORKSPACE
