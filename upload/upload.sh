@@ -1,4 +1,5 @@
 #!/bin/bash
+ls
 cd upload
 echo $WORKSPACE
 npm install
