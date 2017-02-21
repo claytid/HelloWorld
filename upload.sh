@@ -1,2 +1,3 @@
 #!/bin/bash
-node /Users/bmullan/Documents/Apps/node-test-result-update/index.js 
+cd /Users/bmullan/Documents/Apps/node-test-result-update
+node index.js 
