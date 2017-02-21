@@ -1,5 +1,5 @@
 #!/bin/bash
 cd upload
-echo %WORKSPACE%
+echo $WORKSPACE
 npm install
 node index.js 
