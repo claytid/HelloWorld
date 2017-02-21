@@ -1,0 +1,23 @@
+{
+  "name": "node-test-result-update",
+  "version": "1.0.0",
+  "description": "Upload test results to AC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrackzone/node-test-result-update.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrackzone/node-test-result-update/issues"
+  },
+  "homepage": "https://github.com/wrackzone/node-test-result-update#readme",
+  "dependencies": {
+    "junit-xml-parser": "0.0.3",
+    "lodash": "^4.17.4"
+  }
+}

@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /Users/bmullan/Documents/Apps/node-test-result-update
+npm install
 node index.js 
