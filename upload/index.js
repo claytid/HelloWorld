@@ -14,7 +14,7 @@ fs.readFile(filename, 'utf8', function (err,data) {
   	} else {
   		// console.log("data",data);
 		parser.parse(data).then(function (results) { 
-			console.log( "Tests:",results.suite.tests.length );
+			console.log( "Tests:",results.suite.tests.length, results.suite.name);
 			// console.log( "Tests:",results.suite.tests );
 			_.each(results.suite.tests,function(test){
 				console.log("Test:",test);
