@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="bmullan-mbr.local" name="sample.HelloWorldTest" skipped="1" tests="3" time="0.413" timestamp="2017-02-22T19:48:35">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.6/libexec" />
+    <property name="jar.dir" value="build/jar" />
+    <property name="java.runtime.version" value="1.8.0_60-b27" />
+    <property name="test.build.dir" value="build/test" />
+    <property name="user.name" value="bmullan" />
+    <property name="ant.file.type.HelloWorld" value="file" />
+    <property name="build.dir" value="build" />
+    <property name="user.language" value="en" />
+    <property name="ant.file.HelloWorld" value="/Users/bmullan/Documents/Apps/HelloWorld/build.xml" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="ant.project.name" value="HelloWorld" />
+    <property name="java.version" value="1.8.0_60" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="test.src.dir" value="test" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="classes.dir" value="build/classes" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="main-class" value="sample.HelloWorld" />
+    <property name="ant.file" value="/Users/bmullan/Documents/Apps/HelloWorld/build.xml" />
+    <property name="os.version" value="10.10.5" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.60-b23" />
+    <property name="report.dir" value="build/junit" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.6/libexec/lib" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="user.home" value="/Users/bmullan" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="/Users/bmullan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp  -lib /usr/local/share/ant" />
+    <property name="java.class.path" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/share/ant:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-antlr.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-bcel.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-bsf.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-log4j.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-oro.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-regexp.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-resolver.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-apache-xalan2.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-commons-logging.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-commons-net.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-jai.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-javamail.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-jdepend.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-jmf.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-jsch.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-netrexx.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-swing.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-testutil.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/tools.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/var/folders/4r/rzq86d5s11df__7xfn26lkb4lr033z/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Users/bmullan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/bmullan/Documents/Apps/HelloWorld" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/bmullan/Documents/Apps/HelloWorld" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.invoked-targets" value="main" />
+  </properties>
+  <testcase classname="sample.HelloWorldTest" name="thisAlwaysFails" time="0.009">
+    <failure message="This is the end!" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: This is the end!
+	at sample.HelloWorldTest.thisAlwaysFails(Unknown Source)
+</failure>
+  </testcase>
+  <testcase classname="sample.HelloWorldTest" name="thisIsIgnored" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase classname="sample.HelloWorldTest" name="thisAlwaysPasses" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
