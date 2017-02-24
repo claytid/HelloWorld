@@ -19,6 +19,10 @@
 
 // MVP 3
 // 1. use junit annotations to specify the story name/id
+// config file provided by jenkins
+console.log("using config file:",process.argv[2]);
+var config = require(process.argv[2]);
+
 
 var fs = require('fs');
 var path = require('path');
@@ -29,8 +33,6 @@ var rally = require('rally'),
 	refUtils = rally.util.ref,
  	queryUtils = rally.util.query;
 
-// config file provided by jenkins
-var config = require(process.argv[2]);
 
 var restApi = rally(config);
 
