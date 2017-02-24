@@ -109,7 +109,8 @@ function resultFromJunitResult(junitResult) {
 		"Notes" : junitResult.failure ? 
 			// (junitResult.failure.message + "<p></p" + junitResult.failure.raw) : "",
 			(junitResult.failure.message + "\n" + junitResult.failure.raw) : "",
-		"Verdict" : verdict
+		"Verdict" : verdict,
+		"Method" : "Automated"
 	}
 
 	// console.log("junit result",result);
@@ -118,7 +119,6 @@ function resultFromJunitResult(junitResult) {
 
 function createTestCaseResult(testCase, result, callback) {
 
-	console.log(testCase.FormattedID,result);
 	result["TestCase"] = testCase["_ref"];
 
 	restApi.create({
@@ -135,7 +135,6 @@ function createTestCaseResult(testCase, result, callback) {
 	        console.log(error);
 	        callback(error,null);
 	    } else {
-	        // console.log(result.Object);
 	        callback(null,result.Object);
 	    }
 	});
@@ -178,20 +177,16 @@ function readWorkspaceRef(workspaceName,callback) {
 	        console.log("Error",error);
 	        callback(error,null);
 	    } else {
-	    	// console.log("ws results",result);
 			var workspace = _.find(result.Results,function(r) {
 	        	return r.Name === workspaceName;
 	        });
-	        // console.log(workspace.Projects);
 	        callback(null,workspace)
 	    }
 	});
 }
 
 function readProjectRef(projectName,callback) {
-	console.log("looking for project ",projectName)
 	var q = queryUtils.where("name" , "=" , projectName )
-	console.log("looking for project ",q)
 	restApi.query({
 	    type: 'project', //the type to query
 	    start: 1, //the 1-based start index, defaults to 1
@@ -209,7 +204,6 @@ function readProjectRef(projectName,callback) {
 	        console.log("Error",error);
 	        callback(error,result);
 	    } else {
-	        console.log("query result:"+result.Results);
 	        callback(null,_.first(result.Results));
 	    }
 	});
@@ -224,7 +218,6 @@ function processTest(test,callback) {
 		console.log("found....",tc !==undefined ? tc.FormattedID : " (null)");
 		if (tc) {
 			createTestCaseResult(tc,resultFromJunitResult(test),function(error,tcr){
-				console.log("tcr",tcr._ref);
 				callback(null,tcr);
 			})
 		} else {
@@ -235,7 +228,6 @@ function processTest(test,callback) {
 				  function(error,tc) {
 				  	if (tc) {
 						createTestCaseResult(tc,resultFromJunitResult(test),function(error,tcr){
-							console.log("tcr",tcr._ref);
 							callback(null,tcr);
 						})
 				  	}
@@ -248,15 +240,11 @@ function processTest(test,callback) {
 function processFile(filename) {
 	fs.readFile(filename, 'utf8', function (err,data) {
 		if (err) {
-	    	return console.log(err);
+	    	console.log(err);
 	  	} else {
-	  		// console.log("data",data);
 			parser.parse(data).then(function (results) { 
-				// console.log( "Tests:",results.suite.tests.length, results.suite.name);
-				// console.log( "Suite:",results.suite, results.suite.name);
-				// console.log( "Tests:",results.suite.tests );
 				async.mapSeries(results.suite.tests,processTest,function(error,results){
-					console.log("done! ",results.length);
+					console.log("Processed ",results.length," Tests.");
 				})
 			});
 		}
@@ -269,7 +257,6 @@ function walkSync(currentDirPath, callback) {
     fs.readdirSync(currentDirPath).forEach(function (name) {
         var filePath = path.join(currentDirPath, name);
         var stat = fs.statSync(filePath);
-        // console.log(path.extname(filePath));
         if (stat.isFile() && path.extname(filePath)==".xml") {
             callback(filePath, stat);
         } else if (stat.isDirectory()) {

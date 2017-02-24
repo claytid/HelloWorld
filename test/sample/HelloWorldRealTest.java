@@ -28,4 +28,9 @@ public class HelloWorldRealTest {
     public void testAdd1() {
        assertEquals( hw.add(1,1),2);
     }
+
+    @Test
+    public void testAdd2() {
+       assertEquals( hw.add(1,1),3);
+    }
 }
