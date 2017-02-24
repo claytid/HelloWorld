@@ -1,6 +1,7 @@
 #!/bin/bash
 cd upload
-cat $CONFIGFILE
+# cat $CONFIGFILE
+cp $CONFIGFILE ./config.json
 npm install
-node index.js $CONFIGFILE $WORKSPACE $BUILD_NUMBER
+node index.js ./config.json $WORKSPACE $BUILD_NUMBER
 
