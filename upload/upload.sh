@@ -1,7 +1,5 @@
 #!/bin/bash
-ls
 cd upload
-echo $APIKEYFILE
-cat $APIKEYFILE
+echo $CONFIGFILE
 npm install
-node index.js $WORKSPACE
+node index.js $CONFIGFILE $WORKSPACE $BUILD_NUMBER

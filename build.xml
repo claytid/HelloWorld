@@ -23,7 +23,7 @@
 <path id="classpath.test">
     <pathelement location="lib/junit-4.11.jar" />
     <pathelement location="lib/hamcrest-core-1.3.jar" />
-    <pathelement location="${build.dir}"/>
+    <pathelement location="${classes.dir}"/>
     <path refid="classpath.base" />
 </path>
 

@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/wrackzone/node-test-result-update#readme",
   "dependencies": {
+    "async": "^2.1.5",
     "junit-xml-parser": "0.0.3",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "rally": "^2.1.2"
   }
 }
