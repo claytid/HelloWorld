@@ -26,7 +26,7 @@ public class HelloWorldRealTest {
     
     @Test
     public void testAdd1() {
-       assertEquals( hw.add(1,1),2);
+       assertEquals( hw.add(1,1),3);
     }
 
     @Test
